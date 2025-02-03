@@ -67,6 +67,8 @@ pip install apache-airflow apache-airflow-providers-postgres
 ```bash
 export AIRFLOW_HOME=$(pwd)/airflow  # On macOS/Linux
 set AIRFLOW_HOME=%cd%\airflow      # On Windows
+``````bash
+airflow db init
 ```
 Configure Airflow (Important):
 Add or modify the following settings in airflow.cfg
