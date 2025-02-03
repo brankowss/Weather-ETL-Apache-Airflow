@@ -74,7 +74,7 @@ Add or modify the following settings in airflow.cfg
 [core]
 sql_alchemy_conn = postgresql+psycopg2://your_user:your_password@localhost/your_db_name  # If you want to use a PostgreSQL for metadata
 executor = LocalExecutor  # For this project, LocalExecutor is sufficient
-dags_folder = path_to_your_project/dags # Or a path if you are storing DAGs somewhere else
+dags_folder =  $AIRFLOW_HOME/dags # Or a path if you are storing DAGs somewhere else
 ```
 ```bash
 airflow db init
